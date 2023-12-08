@@ -1,0 +1,123 @@
+/* styles.css */
+/* Adicione uma classe para destacar as células vitoriosas */
+.vitoria {
+    background-color: yellow; /* ou a cor desejada */
+  }
+
+  
+
+#mensagem {
+    color: #faf5f5;
+}  
+
+h1 {
+
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.icone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Isso centraliza os itens horizontalmente */
+    margin-top: 1%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* Adicione um seletor específico para o ícone dentro do botão */
+#botaoAcionar .bi-play-circle {
+    font-size: 24px; /* Ajuste conforme necessário */
+    /* Adicione outros estilos conforme necessário */
+    margin-left: 20px;
+    background-color: darkgreen;
+}
+
+h3 {
+
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 0%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+  table {
+    border-collapse: collapse;
+    width: 300px;
+    margin-top: 20px;
+    background-color: aliceblue;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+
+  #icone_play{
+
+    background-color: rgb(8, 156, 30);
+  }
+
+  /* Estilo para a label com o atributo for="player1" */
+label[for="player1"],[for="player2"] {
+    font-weight: bold;
+    color:white;
+    /* Adicione outros estilos conforme necessário */
+  }
+
+ #rodada {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+ }
+
+ #novojogo_ {
+    margin-right: 200px;
+    margin-bottom: 100px;
+    margin-bottom: 100px;
+ }
+
+ #mensagem {
+    color: white;
+ }
+
+  @media screen and (min-width: 992px) {
+
+  
+    .jogo {
+      width: 50%;
+      background-color: rgb(22, 21, 21);
+      height: 79.5vh;
+      
+    }
+  
+    .linha {
+      background-color: rgb(0, 204, 255);
+      width: 2px;
+      height: 79.5vh;
+    }
+  
+    .resultado {
+      font-weight: bold;
+      color: white;
+      width: 50%;
+    }
+  }
+  

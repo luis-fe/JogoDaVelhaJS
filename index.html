@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+<div class="Titulo">
+    <h1>Jogo da Velha</h1>
+</div>
+
+<div class="tela">
+    <div class="jogo">
+        <div>
+            <label for="player1">Jogador 1:</label>
+            <input type="text" id="player1" placeholder="Digite o nome do Jogador 1" onblur="capturarNome()">
+            <label for="escolha1"></label>
+            <span id="escolha1"> </span>
+            <button id='botaoX' onclick="chooseSymbol('X')">X</button>
+            <button id='botaoO' onclick="chooseSymbol('O')">O</button>
+        </div>
+
+        <div>
+            <label for="player2">Jogador 2:</label>
+            <input type="text" id="player2" placeholder="Digite o nome do Jogador 2" onblur="capturarNome2()">
+            <label for="escolha2"></label>
+            <span id="escolha2"> </span>
+            <button id="botaoAcionar" class="icone-container" onclick="acionar()">
+                <i class="bi bi-play-circle"></i>
+                <h3>play</h3>
+            </button>
+
+
+
+        </div>
+
+        <div>
+            <h2 id="mensagem"> <span id="mensagem"></span></h2>
+            <span id="rodada"> </span>
+            <table id="board" style="display: none;">
+                <tr>
+                    <td id="cell-0-0" onclick="selectCell(0, 0)"></td>
+                    <td id="cell-0-1" onclick="selectCell(0, 1)"></td>
+                    <td id="cell-0-2" onclick="selectCell(0, 2)"></td>
+                </tr>
+                <tr>
+                    <td id="cell-1-0" onclick="selectCell(1, 0)"></td>
+                    <td id="cell-1-1" onclick="selectCell(1, 1)"></td>
+                    <td id="cell-1-2" onclick="selectCell(1, 2)"></td>
+                </tr>
+                <tr>
+                    <td id="cell-2-0" onclick="selectCell(2, 0)"></td>
+                    <td id="cell-2-1" onclick="selectCell(2, 1)"></td>
+                    <td id="cell-2-2" onclick="selectCell(2, 2)"></td>
+                </tr>
+            </table>
+
+            <button id='novojogo' onclick="novoJogo()" style="display: none;">Novo Jogo</button>
+            
+        </div>
+    
+    </div>
+
+    <div class="linha">
+
+    </div>
+
+    <div class="resultado">
+        <h2>RESULTADO</h2>
+    </div>
+
+</div>        
+   
+  
+
+
+</body>
+
+<script src="script/script.js"></script>
+
+</html>
